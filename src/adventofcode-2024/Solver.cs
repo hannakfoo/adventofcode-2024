@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using adventofcode_2024.Contracts;
 
-namespace adventofcode_2024.Contest;
+namespace adventofcode_2024;
 
 public class Solver
 {
@@ -24,7 +24,7 @@ public class Solver
 
         if (solver == null)
         {
-            throw new ArgumentNullException();
+            return($" Error: No solver found for Day {_day} Part {_part}");
         }
         
         var instance = (ISolver)Activator.CreateInstance(solver)!;
@@ -32,7 +32,7 @@ public class Solver
         {
             1 => instance.SolvePart1(),
             2 => instance.SolvePart2(),
-            _ => throw new ArgumentException("Part must be 1 or 2")
+            _ => throw new ArgumentException("Part must be 1 or 2, there are only 2 parts to solve!")
         };
     }
 }

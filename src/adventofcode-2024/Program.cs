@@ -1,12 +1,14 @@
-﻿using adventofcode_2024.Contest;
-using adventofcode_2024.Contracts;
+﻿using adventofcode_2024.Contracts;
 using CommandLine;
+
+namespace adventofcode_2024;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Parser.Default
+        Parser
+            .Default
             .ParseArguments<ProgramOptions>(args)
             .WithParsed(RunOptions);
     }
