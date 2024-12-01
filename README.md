@@ -39,7 +39,3 @@ dotnet run -- -d 1 -p 1
 
 - .NET 6.0 or later
 - CommandLineParser
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
