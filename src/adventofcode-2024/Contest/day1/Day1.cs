@@ -10,7 +10,7 @@ public class Day1 : ISolver
         
         var leftlist = new List<int>();
         var rightlist = new List<int>();
-        var lines = File.ReadLines("Contest/day1/input1.txt");
+        var lines = File.ReadLines("Contest/day1/input.txt");
         foreach (var line in lines)
         {
             var splitted = line.Split("   ");
@@ -35,7 +35,7 @@ public class Day1 : ISolver
         
         var leftlist = new List<int>();
         var rightlist = new List<int>();
-        var lines = File.ReadLines("Contest/day1/input1.txt");
+        var lines = File.ReadLines("Contest/day1/input.txt");
         foreach (var line in lines)
         {
             var splitted = line.Split("   ");
