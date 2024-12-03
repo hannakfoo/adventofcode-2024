@@ -23,6 +23,18 @@
     <Content Include="..\..\README.md">
       <Link>README.md</Link>
     </Content>
+    <None Remove="Contest\day2\input.txt" />
+    <Content Include="Contest\day2\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Remove="Contest\day3\input.txt" />
+    <Content Include="Contest\day3\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Remove="Contest\day3\test.txt" />
+    <Content Include="Contest\day3\test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
